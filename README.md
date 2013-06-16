@@ -45,6 +45,8 @@ $raven = array(
 		'yii' => Yii::getVersion(),
 	),
 );
+
+return array(
 ...
 	'behaviors' => array(
 		'RavenPHPApplicationBehavior' => array(
@@ -127,6 +129,7 @@ $raven = array(
 	),
 	
 ...
+);
 ```
 
 
@@ -136,7 +139,7 @@ PHP errors and uncaught exceptions will be logged automatically as configured ab
 
 To manually log exception use `Yii::app()->logException($thrownException);` method.
 
-See `ERavenPHPUser` class to how to change user attributes.
+See `ERavenPHPUser` class for example how to change user attributes.
 
 
 ## License
